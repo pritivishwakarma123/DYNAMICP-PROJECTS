@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+section>div{
+    background-color: rgb(255, 255, 4);
+    width: 30%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    animation: disco 1s infinite;
+}
+section>#left>div>button{
+    width: 30%;
+    height: 2rem;
+    margin-left: 1rem;
+    border: none;
+    color: black;
+    background-color: rgb(47, 82, 255)
+}
+section>#right>div>button{
+    width: 30%;
+    height: 2rem;
+    margin-left: 1rem;
+    border: none;
+    color: black;
+    background-color: rgb(47, 82, 255)
+}
+section>#left>div>button:active{
+    background-color: rgb(255, 255, 255);
+}
+section>#right>div>button:active{
+    background-color: rgb(255, 255, 255);
+}
+
+
+@keyframes disco{
+    0%{
+        background-color:lightcoral;
+    }
+    25%{
+        background-color: lightgreen;
+    }
+    50%{
+        background-color: lightsteelblue;
+    }
+    75%{
+        background-color: lightsalmon;
+    }
+    100%{
+        background-color: plum;
+    }
+}

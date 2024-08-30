@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+main>div{
+    background-color: blue;
+    width: 30%;
+    text-align: center;
+    color: whitesmoke;
+    animation: disco 4s infinite;
+}
+main>div>div>button{
+    width: 20%;
+    height: 2rem;
+    margin-left: 1rem;
+    border: none;
+    color: black;
+    background-color: greenyellow
+}
+main>div>div>button:active{
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes disco{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: brown;
+    }
+    75%{
+        background-color: hotpink;
+    }
+    100%{
+        background-color: rgb(0, 224, 71);
+    }
+}
+
+
+
